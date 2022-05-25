@@ -58,16 +58,19 @@ class ViewController: UIViewController {
 
     @IBAction func changeValueForRed() {
         valueRedField.text = String(Int(sliderForRedColor.value))
+        mainColorScreen.backgroundColor = UIColor(red: CGFloat(sliderForRedColor.value)/255, green: CGFloat(sliderForGreenColor.value)/255, blue: CGFloat(sliderForBlueColor.value)/255, alpha: 1)
     }
     
     
     @IBAction func changeValueForGreen() {
         valueGreenField.text = String(Int(sliderForGreenColor.value))
+        mainColorScreen.backgroundColor = UIColor(red: CGFloat(sliderForRedColor.value)/255, green: CGFloat(sliderForGreenColor.value)/255, blue: CGFloat(sliderForBlueColor.value)/255, alpha: 1)
     }
     
     
     @IBAction func changeValueForBlue() {
         valueBlueField.text = String(Int(sliderForBlueColor.value))
+        mainColorScreen.backgroundColor = UIColor(red: CGFloat(sliderForRedColor.value)/255, green: CGFloat(sliderForGreenColor.value)/255, blue: CGFloat(sliderForBlueColor.value)/255, alpha: 1)
     }
 }
 
