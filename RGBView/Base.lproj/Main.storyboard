@@ -70,12 +70,21 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bLX-3g-wxp">
                                 <rect key="frame" x="160" y="300" width="240" height="31"/>
+                                <connections>
+                                    <action selector="changeValueForRed" destination="BYZ-38-t0r" eventType="valueChanged" id="HAy-b7-dua"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hvO-5q-Jw8">
                                 <rect key="frame" x="160" y="355" width="240" height="31"/>
+                                <connections>
+                                    <action selector="changeValueForGreen" destination="BYZ-38-t0r" eventType="valueChanged" id="Zk2-ga-a7I"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vHV-9o-bon">
                                 <rect key="frame" x="160" y="410" width="240" height="31"/>
+                                <connections>
+                                    <action selector="changeValueForBlue" destination="BYZ-38-t0r" eventType="valueChanged" id="hGd-me-oNU"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="255" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAe-FC-kBA">
                                 <rect key="frame" x="101" y="410" width="45" height="30"/>
@@ -116,10 +125,19 @@
                             <constraint firstItem="heU-D0-KPV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xjQ-fU-ckM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainColorScreen" destination="THZ-D7-2QI" id="NBX-Ht-His"/>
+                        <outlet property="sliderForBlueColor" destination="vHV-9o-bon" id="1xA-9y-twn"/>
+                        <outlet property="sliderForGreenColor" destination="hvO-5q-Jw8" id="6Ai-ds-q4e"/>
+                        <outlet property="sliderForRedColor" destination="bLX-3g-wxp" id="h9Q-Ap-CWQ"/>
+                        <outlet property="valueBlueField" destination="dAe-FC-kBA" id="NeH-7h-MDW"/>
+                        <outlet property="valueGreenField" destination="KdC-L2-mRR" id="5KG-0x-MNA"/>
+                        <outlet property="valueRedField" destination="zAM-Rd-xLD" id="QOB-MF-kXm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="102"/>
+            <point key="canvasLocation" x="661" y="110"/>
         </scene>
     </scenes>
     <resources>
