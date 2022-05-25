@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         //MARK: Main Color Field
         mainColorScreen.backgroundColor = .white
-        
+        mainColorScreen.layer.cornerRadius = 10
         
         // MARK: Labales
         valueRedField.text = "1"
@@ -52,6 +52,7 @@ class ViewController: UIViewController {
         sliderForRedColor.thumbTintColor = UIColor(red: 255/255, green: 0/255, blue: 0/255, alpha: 1)
         sliderForGreenColor.thumbTintColor = UIColor(red: 0/255, green: 255/255, blue: 0/255, alpha: 1)
         sliderForBlueColor.thumbTintColor = UIColor(red: 0/255, green: 0/255, blue: 255/255, alpha: 1)
+        
         
         
     }
